@@ -7,7 +7,16 @@ public class Exersice {
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
 
+        int n = Integer.parseInt(console.nextLine());
 
+        printRecursion(n);
+    }
 
+    private static void printRecursion(int n) {
+        if (n <= 1) {
+            return;
+        }
+        System.out.print(n + " ");
+        printRecursion(n - 1);
     }
 }
